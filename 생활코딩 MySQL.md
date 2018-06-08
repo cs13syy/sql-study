@@ -40,3 +40,21 @@
 - table(표); row(행); column(열)
 - 행은 데이터 자체, 열은 데이터의 타입
 ----------------
+## 테이블의 생성
+테이블 생성 명령 **CREATE TABLE topic(** 이대로 enter 치고 줄바꿈 하면서 열 생성
+1. **id INT(11) NOT NULL AUTO_INCREMENT**
+	- **INT(11)** 정수형으로 데이터 타입을 강제하겠다
+	- **NOT NULL** 값이 없는 것을 허용하지 않겠다
+	- **AUTO_INCREMENT** 자동으로 1씩 증가한다, 중복되지 않는 식별자 생성
+2. **title VARCHAR(100) NOT NULL,
+	- **VARCHAR(100)** 문자형으로 데이터 타입을 강제하고, 100개까지만 허용하겠다
+3. **description TEXT NULL**
+	- **TEXT** 긴 문자형으로 데이터 타입을 강제하겠다
+	- **NULL** 값이 없는 것을 허용하겠다
+4. **created DATETIME NOT NULL**
+	- **DATETIME** YYYY-MM-DD HH-MM-SS로 데이터 타입을 강제하겠다
+5. **author VARCHAR(30) NULL**
+6. **profile VARCHAR(100) NULL**
+7. **PRIMARY KEY(id)**
+	- **PRIMARY KEY** 해당 열이 메인 키임을 지정
+	- 중복 방지: 각각의 값이 중복되면 안 돼!라는 의미
