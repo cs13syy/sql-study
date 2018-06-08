@@ -58,3 +58,25 @@
 7. `PRIMARY KEY(id)`
 	- **PRIMARY KEY** 해당 열이 메인 키임을 지정
 	- 중복 방지: 각각의 값이 중복되면 안 돼!라는 의미
+----------------
+## INSERT
+- `DESC topic;` 테이블의 구조 확인 (DESC는 describe의 약자)
+- `INSERT INTO topic (title,description,created,author,profile) VALUES('MySQL','MySQL is...',NOW(),'egoing','developer');`
+	- 데이터 행 추가하는 방법	
+	- 순서쌍에 맞게 나열할 것
+- `SELECT * FROM topic;` topic 테이블 전체를 출력
+	- *는 전체를 의미
+## SELECT
+- `SELECT (열 명) FROM (테이블 명) WHERE (행 조건식) ORDER BY (열 명) (ASC/DESC) LIMIT (개수);`
+	- SELECT는 열 선택하여 출력 시 사용
+	- 반드시 WHERE는 FROM 다음에 기재
+	- WHERE는 행 선택, 뒤에 행의 조건식을 기재
+	- ORDER BY는 정렬, 뒤에 열 명과 정렬 순서를 기재
+	- **ASC** 오름차순 **DESC** 내림차순
+	- LIMIT은 출력되는 개수 제한
+## UPDATE
+- `UPDATE (테이블 명) SET (변경 조건식) WHERE (행 조건식);`
+- WHERE문 빠뜨리면 큰 재앙이 올 수 있으니 반드시 기재할 것
+## DELETE
+- 'DELETE FROM (테이블 명) WHERE (행 조건식);'
+----------------
