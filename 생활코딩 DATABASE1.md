@@ -11,3 +11,12 @@
 - file → spreadsheet → database 순으로 정보 구조화가 발달
 - 구조적으로 데이터 저장 시 데이터를 자유자재로 가공할 수 있는 이점이 큼
 - 전문적 데이터베이스 프로그램 사용 시 자동화 가능
+---
+- DB-ENGINES 기준 데이터베이스 랭킹
+	- 1위. Oracle / Relational DBMS
+	- 2위. MySQL / Relational DBMS
+	- 5위. MongoDB/ NOT Relational DBMS
+- 관계형 데이터베이스: 자료를 프레임 형태로 정리할 수 있고, 정렬/검색 작업을 빠르고 안전하게 할 수 있는 장점
+- Oracle: 데이터베이스 계의 절대 강자; 고가이므로 자급력 있는 관공서, 기업 사용
+- MySQL: 무료 오픈 소스로 개인, SNS, 소규모 기업에 적합
+- MongoDB: 관계형에 맞지 않는 데이터 생성으로 NoSQL 흐름 나타나면서 등장한 비관계형 데이터베이스
