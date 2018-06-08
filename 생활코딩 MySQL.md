@@ -25,13 +25,13 @@
 	- Enter password: 라는 문구가 나타나면 비밀번호 입력
 	- ERROR 1045 (28000): Access denied~라는 문구가 나타나면 비밀번호 틀림 → "mysql 비밀번호 분실", "mysql password recovery" 등의 키워드를 구글링하여 비밀번호 찾기
 ----------------
-##스키마의 사용
+## 스키마의 사용
 - 스키마 생성하기 **CREATE DATABASE opentutorials;**
 - 스키마 삭제하기 **DROP DATABASE opentutorials;**
 - 스키마 확인하기 **SHOW DATABASES;**
 - 스키마 사용하기 **USE opentutorials;**
 ----------------
-##SQL과 테이블의 구조
+## SQL과 테이블의 구조
 - SQL은 **S**tructured **Q**uery **L**anguage의 약자
 - structured: 표의 형태로 데이터를 정리정돈
 - query: 데이터베이스에 요청, 질의한다는 의미
