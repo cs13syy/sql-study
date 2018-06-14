@@ -13,3 +13,8 @@
   - 사용 예시: CASE 열 명/ WHEN 조건1 THEN 값1/ WHEN 조건2 THEN 값2/ ELSE 값3/ END
 - ELSE 생략 시, ELSE NULL이 된다
 ---
+## 데이터의 추가, 삭제, 갱신
+- INSERT INTO 테이블 명(열 명1, 열 명2, ...) VALUES(데이터1, 데이터2, ...);
+- DELETE FROM 테이블 명 WHERE 조건식;
+- UPDATE 테이블 명 SET 열 명1 = 데이터1, 열 명2 = 데이터2, ... WHERE 조건식;
+---
