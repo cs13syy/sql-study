@@ -25,6 +25,6 @@
 	- 열 추가 : ALTER TABLE 테이블 명 ADD 열 정의;
 	- 열 삭제 : ALTER TABLE 테이블 명 MODIFY 열 정의; (열 이름 변경 불가)
 	- 열 삭제 : ALTER TABLE 테이블 명 DROP 열 이름;
-	- 열 변경 : ALTER TABLE 테이블 명 CHANGE [기존 열 이름] [신규 열 정의] (열 속성 변경 가능)
+	- 열 변경 : ALTER TABLE 테이블 명 CHANGE [기존 열 이름] [신규 열 정의]; (열 속성 변경 가능)
   ---
   ## 
