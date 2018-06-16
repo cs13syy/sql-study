@@ -11,21 +11,21 @@
 ---
 ## DDL 구문 (작성, 삭제, 변경)
 - DDL이란 DB를 정의하는 명령어
-- CREATE : CREATE 테이블 명 (열 명 자료형 [DEFAULT 기본값] [NULL | NOT NULL]);
+- CREATE : CREATE [테이블 명] ([열 명] [자료형] [DEFAULT 기본값] [NULL | NOT NULL]);
 	- CHAR이나 VARCHAR 등 문자열형을 지정할 때는 최대길이를 괄호로 묶어줘야 함
 	- 지정한 문자열 길이를 넘으면 에러가 발생함
-- DROP(물리삭제) : DROP TABLE 테이블 명;
-- DELETE : DELETE FROM 테이블 명 WHERE 조건식;
+- DROP(물리삭제) : DROP TABLE [테이블 명];
+- DELETE : DELETE FROM [테이블 명] WHERE [조건식];
 	- 테이블은 그대로 둔 채 데이터만 삭제
 	- WHERE 조건 지정하지 않으면 테이블 전체 행 삭제
  	- 삭제할 행이 많으면 처리속도 늦어짐
-- TRUNCATE : TRUNCATE TABLE 테이블 명;
+- TRUNCATE : TRUNCATE TABLE [테이블 명];
 	- 모든 행을 빠르게 삭제
-- ALTER : ALTER TABLE 테이블 명 변경명령;
-	- 열 추가 : ALTER TABLE 테이블 명 ADD 열 정의;
-	- 열 삭제 : ALTER TABLE 테이블 명 MODIFY 열 정의; (열 이름 변경 불가)
-	- 열 삭제 : ALTER TABLE 테이블 명 DROP 열 이름;
-	- 열 변경 : ALTER TABLE 테이블 명 CHANGE [기존 열 이름] [신규 열 정의]; (열 속성 변경 가능)
+- ALTER : ALTER TABLE [테이블 명] 변경명령;
+	- 열 추가 : ALTER TABLE [테이블 명] ADD [열 정의];
+	- 열 삭제 : ALTER TABLE [테이블 명] MODIFY [열 정의]; (열 이름 변경 불가)
+	- 열 삭제 : ALTER TABLE [테이블 명] DROP [열 이름];
+	- 열 변경 : ALTER TABLE [테이블 명] CHANGE [기존 열 이름] [신규 열 정의]; (열 속성 변경 가능)
   ---
 ## 제약 
 - 제약 조건이란 데이터의 무결성을 지키기 위해 제한된 조건
